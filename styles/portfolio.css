@@ -61,7 +61,7 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 100px 20px;
 }
 .content-container h1 {
   font-size: 64px;
@@ -83,8 +83,10 @@ p {
 }
 
 .content {
-  text-align: center;
-  padding: 0;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mb-6 {
@@ -128,8 +130,40 @@ p {
   }
 
   .project-description {
-    padding: 0;
+    padding: 40px 60px;
     text-align: center;
+  }
+  .row {
+    align-items: center;
+  }
+
+  .content {
+    padding: 0 60px;
+  }
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col-md-6 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col-md-6 img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .col-md-6 h3 {
+    font-size: 1.25rem;
+  }
+
+  .col-md-6 p {
+    font-size: 0.95rem;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -137,4 +171,33 @@ p {
   max-width: 100%;
   height: auto;
   border-radius: 10%;
+  object-fit: cover;
+}
+
+.col-md-6 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.col-md-6 h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.col-md-6 p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: gray;
+  word-wrap: break-word;
+  max-width: 85%;
+  text-align: left;
+}
+
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
 }
