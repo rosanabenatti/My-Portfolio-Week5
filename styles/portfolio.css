@@ -7,6 +7,8 @@
 
 body {
   font-family: var(--default-font-family);
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -74,7 +76,6 @@ p {
 .content-container h3 {
   font-size: 24;
   line-height: 1.5;
-
   font-family: var(--default-font-family);
 }
 
@@ -99,7 +100,13 @@ p {
   color: white;
   font-size: 18px;
   line-height: 27px;
-  padding: 15px 30px;
+  padding: 15px 48px;
+  font-family: var(--default-font-family);
+}
+
+.btn-branding:hover {
+  color: white;
+  background: #5a52e1;
 }
 
 .btn-branding-outline {
@@ -108,96 +115,74 @@ p {
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
-  padding: 15px 30px;
+  padding: 15px 48px;
+  font-family: var(--default-font-family);
 }
 
-.project-desciption {
-  padding: 120px 60px;
+.btn-branding-outline:hover {
+  color: white;
+  background: var(--branding-color);
 }
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 44px;
-    line-height: 2;
-  }
+nav {
+  background-color: white;
+  padding: 20px 0;
+}
 
-  h2 {
-    font-size: 44px;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
 
-  .hero {
-    padding: 80px 20px;
-  }
+nav ul li {
+  margin: 0 15px;
+}
 
-  .project-description {
-    padding: 40px 60px;
-    text-align: center;
-  }
-  .row {
-    align-items: center;
-  }
+nav ul li a {
+  text-decoration: none;
+  color: var(--branding-color);
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
 
-  .content {
-    padding: 0 60px;
-  }
-  .col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .col-md-6 {
+nav ul li a:hover {
+  color: #5a52e1;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
     flex-direction: column;
     align-items: center;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  nav ul {
+    display: block;
     text-align: center;
+    width: 100%;
   }
 
-  .col-md-6 img {
-    width: 80%;
-    margin-bottom: 20px;
+  nav ul li {
+    margin: 10px 0;
   }
 
-  .col-md-6 h3 {
-    font-size: 1.25rem;
-  }
-
-  .col-md-6 p {
-    font-size: 0.95rem;
-    max-width: 100%;
-    margin: 0 auto;
+  nav ul li a {
+    font-size: 24px;
   }
 }
 
-.img-fluid {
-  max-width: 100%;
+.logo {
+  max-width: 150px;
   height: auto;
-  border-radius: 10%;
-  object-fit: cover;
 }
 
-.col-md-6 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10%;
-  object-fit: cover;
-}
-
-.col-md-6 h3 {
-  margin-top: 15px;
-  font-size: 1.5rem;
-}
-
-.col-md-6 p {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: gray;
-  word-wrap: break-word;
-  max-width: 85%;
-  text-align: left;
-}
-
-.col-md-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
+.project-description {
+  padding: 40px 20px;
 }
