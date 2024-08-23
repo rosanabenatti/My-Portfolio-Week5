@@ -122,6 +122,14 @@ p {
   background: var(--branding-color);
 }
 
+.logo {
+  max-height: 40px;
+}
+
+.project-description {
+  padding: 40px 20px;
+}
+
 nav {
   padding: 20px 0;
 }
@@ -149,7 +157,7 @@ nav li.active a {
   color: var(--branding-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -173,12 +181,4 @@ nav li.active a {
   nav ul li a {
     font-size: 14px;
   }
-}
-
-.logo {
-  max-height: 40px;
-}
-
-.project-description {
-  padding: 40px 20px;
 }
