@@ -158,27 +158,26 @@ nav li.active a {
 }
 
 @media (max-width: 900px) {
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+  h1 {
+    font-size: 44px;
+    line-height: 56px;
   }
 
-  .nav-menu.show {
-    display: flex;
+  h2 {
+    font-size: 44px;
   }
 
-  nav ul {
-    display: block;
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .content {
     text-align: center;
-    width: 100%;
+    padding: 0;
   }
 
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  nav ul li a {
-    font-size: 14px;
+  .project-desciption {
+    padding: 0;
+    text-align: center;
   }
 }
