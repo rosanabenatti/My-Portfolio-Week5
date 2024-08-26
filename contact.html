@@ -16,94 +16,96 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/portfolio.css" />
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://kit.fontawesome.com/ddc3ee268a.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
-  <body>
+  <body class="contact-page">
     <div class="container">
-      <nav class="d-flex justify-content-between">
+      <nav class="d-flex justify-content-between align-items-center py-3">
         <a href="/" title="Home Page">
           <img src="images/RB-Logo5.png" class="logo" alt="Robenatti-logo" />
         </a>
-        <ul>
+        <ul class="nav-list">
           <li>
-            <a href="/" title="HomePage" title="Home Page"> Home</a>
+            <a href="/" title="HomePage">Home</a>
           </li>
           <li>
-            <a href="/about.html" title="About RoBenatti's Page"> About</a>
+            <a href="/about.html" title="About RoBenatti's Page">About</a>
           </li>
           <li>
-            <a href="/work.html" title="RoBenatti Work Page"> Work</a>
+            <a href="/work.html" title="RoBenatti Work Page">Work</a>
           </li>
           <li class="active">
-            <a href="/contact.html" title="RoBenatti Contact Page"> Contact</a>
+            <a href="/contact.html" title="RoBenatti Contact Page">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="content-container">
-      <div class="content">
-        <h1 class="mb-5">Let's get in touch!</h1>
-        <h3>Email</h3>
-        <p>
-          <a href="mailto:contact@robenatti.com">Send me an email</a>
-        </p>
 
-        <h3>Linkedin</h3>
-        <p>
-          <a href="https://www.linkedin.com/in/rosanabenatti/" target="_blank"
-            >rosanabenatti</a
-          >
-        </p>
+    <div class="content-container container text-center">
+      <h1 class="mb-5">Let's get in touch!</h1>
 
-        <h3>Instagram</h3>
-        <p>
-          <a href="https://www.instagram.com/rosanaabenatti" target="_blank"
-            >@rosanaabenatti</a
-          >
-        </p>
+      <div class="contact-grid">
+        <div class="contact-method mb-4">
+          <h3>Email</h3>
+          <p><a href="mailto:contact@robenatti.com">Send me an email</a></p>
+        </div>
 
-        <h3>Website</h3>
-        <p>
-          <a href="https://robenatti.netlify.app/" target="_blank"
-            >robenatti.netlify.app</a
-          >
-        </p>
-      </div>
-      <footer>
-        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
-          <div>
-            <h3>I can help you!</h3>
-            <p class="text-muted">Let's work together</p>
-          </div>
-          <div>
+        <div class="contact-method mb-4">
+          <h3>LinkedIn</h3>
+          <p>
             <a
-              href="contact.html"
-              class="btn btn-branding mt-3"
-              title="Contact RoBenatti"
+              href="https://www.linkedin.com/in/rosanabenatti/"
+              target="_blank"
             >
-              Contact me
+              rosanabenatti
             </a>
-          </div>
+          </p>
+        </div>
+
+        <div class="contact-method mb-4">
+          <h3>Instagram</h3>
+          <p>
+            <a href="https://www.instagram.com/rosanaabenatti" target="_blank">
+              @rosanaabenatti
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-method mb-4">
+          <h3>Website</h3>
+          <p>
+            <a href="https://robenatti.netlify.app/" target="_blank">
+              robenatti.netlify.app
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="contact-box text-center mb-5">
+          <h3>I can help you!</h3>
+          <p class="text-muted">Let's work together</p>
         </div>
         <div class="d-flex justify-content-center mb-5">
           <a
-            href="contact@robenatti.dev"
+            href="mailto:contact@robenatti.dev"
             class="email-link"
             title="Email RoBenatti"
           >
@@ -119,7 +121,7 @@
             <i class="fa fa-github" style="font-size: 36px"></i>
           </a>
           <a
-            href="https://www.instragram.com/rosanaabenatti"
+            href="https://www.instagram.com/rosanaabenatti"
             target="_blank"
             title="RoBenatti Instagram"
           >
@@ -141,7 +143,7 @@
             >open-sourced.</a
           >
         </p>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
